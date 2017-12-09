@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SugarLineController : MonoBehaviour
 {
+    public int sugarLenght = 4;
     public Vector3 AddPosition;
     public Vector3[] SugarPos = null;
     public GameObject[] SugarOnLine = null;
@@ -13,7 +14,7 @@ public class SugarLineController : MonoBehaviour
     private void Awake()
     {
         seconds = new WaitForSeconds(0.01f);
-        SugarOnLine = new GameObject[4];
+        SugarOnLine = new GameObject[sugarLenght];
     }
     public void CheckLineEmpty()
     {
@@ -35,37 +36,15 @@ public class SugarLineController : MonoBehaviour
     {
         for(int i =0;i<25;i++)
         {
-            Roter[0].transform.Rotate(new Vector3(0, 0, -8));
-            Roter[1].transform.Rotate(new Vector3(0, 0, -8));
-            Roter[2].transform.Rotate(new Vector3(0, 0, -8));
-            Roter[3].transform.Rotate(new Vector3(0, 0, -8));
-
-            if(SugarOnLine[0] != null)
+            for(int j =0;j<SugarOnLine.Length;j++)
             {
-                if (SugarOnLine[0].transform.position.x < SugarPos[0].x)
+                Roter[j].transform.Rotate(new Vector3(0, 0, -8));
+                if (SugarOnLine[j] != null)
                 {
-                    SugarOnLine[0].transform.position += new Vector3(0.12f, 0, 0);
-                }
-            }
-            if (SugarOnLine[1] != null)
-            {
-                if (SugarOnLine[1].transform.position.x < SugarPos[1].x)
-                {
-                    SugarOnLine[1].transform.position += new Vector3(0.12f, 0, 0);
-                }
-            }
-            if (SugarOnLine[2] != null)
-            {
-                if (SugarOnLine[2].transform.position.x < SugarPos[2].x)
-                {
-                    SugarOnLine[2].transform.position += new Vector3(0.12f, 0, 0);
-                }
-            }
-            if (SugarOnLine[3] != null)
-            {
-                if (SugarOnLine[3].transform.position.x < SugarPos[3].x)
-                {
-                    SugarOnLine[3].transform.position += new Vector3(0.12f, 0, 0);
+                    if (SugarOnLine[j].transform.position.x < SugarPos[j].x)
+                    {
+                        SugarOnLine[j].transform.position += new Vector3(0.12f, 0, 0);
+                    }
                 }
             }
             yield return seconds;
