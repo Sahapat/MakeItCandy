@@ -11,14 +11,12 @@ public class HandleOrder : MonoBehaviour
     public bool avilable = true;
     public bool isRemove = false;
     private Animator anim;
-    private GameRequirement requirement;
     private WaitForSeconds seconds;
     private WaitForSeconds cooldown;
     private WaitForSeconds cooldown2;
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        requirement = FindObjectOfType<GameRequirement>();
         seconds = new WaitForSeconds(0.01f);
         cooldown = new WaitForSeconds(1.5f);
         cooldown2 = new WaitForSeconds(2f);
