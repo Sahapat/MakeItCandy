@@ -5,14 +5,17 @@ using UnityEngine;
 public class Cone : SweetUnits
 {
     public Flavor flavor = Flavor.None;
+    private ConeMachine coneMachine;
     private void Start()
     {
         gameUnit = GameUnits.Cone;
+        coneMachine = FindObjectOfType<ConeMachine>();
     }
     public void PlaceOnMachine(Vector3 pos)
     {
         transform.position = pos;
         LastPosition = pos;
+        coneMachine.canSuccess = true;
     }
     public void setFlavor(int flavor)
     {
