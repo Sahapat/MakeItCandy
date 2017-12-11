@@ -5,35 +5,43 @@ using UnityEngine;
 public class CandyMachine : Machine
 {
     [SerializeField]
+    private GameObject[] spawnObject;
+    [SerializeField]
     private Vector3[] spawnPoint;
-    public bool[] isEmpty;
     private int spawnIndex;
     public GameObject Candy;
     private void Start()
     {
         maxSlot = 3;
         workingTime = 2;
-        isEmpty = new bool[3]
-            { true,true,true};
+        spawnObject = new GameObject[spawnPoint.Length];
     }
-    protected override void OnStartWorking()
+    protected override bool OnFinishWorking()
     {
-        for (int i = 0; i < spawnPoint.Length; i++)
+        for(int i =0;i<spawnObject.Length;i++)
         {
-            if (isEmpty[i])
+            if(spawnObject[i] == null)
             {
                 spawnIndex = i;
                 break;
             }
+            else
+            {
+                spawnIndex = -1;
+            }
         }
-    }
-    protected override void OnFinishWorking()
-    {
-        GameObject temp = Instantiate(this.Candy, spawnPoint[spawnIndex], Quaternion.identity);
-        Candy candy = temp.GetComponent<Candy>();
-        candy.onIndex = spawnIndex;
-        candy.LastPosition = spawnPoint[spawnIndex];
-        isEmpty[spawnIndex] = false;
+
+        if(spawnIndex == -1)
+        {
+            return false;
+        }
+        else
+        {
+            spawnObject[spawnIndex] = Instantiate(this.Candy, spawnPoint[spawnIndex], Quaternion.identity);
+            Candy candy = spawnObject[spawnIndex].GetComponent<Candy>();
+            candy.LastPosition = spawnPoint[spawnIndex];
+            return true;
+        }
 
     }
     private void OnTriggerEnter(Collider other)
