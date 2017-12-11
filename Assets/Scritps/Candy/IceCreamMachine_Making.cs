@@ -20,11 +20,31 @@ public class IceCreamMachine_Making : SweetUnits
     private SpriteRenderer spIceCream = null;
     private SpriteRenderer spCone = null;
 
+    private IceCreamMachine[] iceCreamMachine = new IceCreamMachine[3];
+
     private void Start()
     {
         spIceCream = obj_IceCream.GetComponent<SpriteRenderer>();
         spCone = obj_Cone.GetComponent<SpriteRenderer>();
         gameUnit = GameUnits.ConeAndIceCream;
+        iceCreamMachine[0] = GameObject.Find("Chocolate").GetComponent<IceCreamMachine>();
+        iceCreamMachine[1] = GameObject.Find("Orange").GetComponent<IceCreamMachine>();
+        iceCreamMachine[2] = GameObject.Find("Vanila").GetComponent<IceCreamMachine>();
+    }
+    protected override void BeforeDestroy()
+    {
+        switch(IceCreamFlavor)
+        {
+            case Flavor.Chocolate:
+                iceCreamMachine[0].canPlace = true;
+                break;
+            case Flavor.Orange:
+                iceCreamMachine[1].canPlace = true;
+                break;
+            case Flavor.Vanila:
+                iceCreamMachine[2].canPlace = true;
+                break;
+        }
     }
     private void Update()
     {
