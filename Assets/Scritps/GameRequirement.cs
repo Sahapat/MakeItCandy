@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameRequirement : MonoBehaviour
 {
-    [Header("Test")]
+    [Header("Requirement")]
     public GameUnits unit;
     public Flavor icecream;
     public Flavor cone;
@@ -30,11 +30,10 @@ public class GameRequirement : MonoBehaviour
     }
     private void Update()
     {
-        if(sugarline.SugarOnLine[3] == null)
+        if(sugarline.SugarOnLine[sugarline.SugarOnLine.Length-1] == null)
         {
             AddSugar();
-            StartCoroutine(sugarline.MoveSugar());
-            sugarline.CheckLineEmpty();
+            sugarline.MoveSugar();
         }
         if (handleOrder.avilable)
         {
@@ -54,7 +53,7 @@ public class GameRequirement : MonoBehaviour
                 }
                 handleOrder.Add();
             }
-            if (stockpath.CheckSuccess(ref SuccessPos))
+            else if (stockpath.CheckSuccess(ref SuccessPos))
             {
                 handleOrder.MoveToPos(SuccessPos);
                 destoryRequireBox.obj_Destory = stockpath.requireBox[SuccessPos];
