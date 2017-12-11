@@ -35,6 +35,10 @@ public class Cone : SweetUnits
                 break;
         }
     }
+    protected override void BeforeDestroy()
+    {
+        coneMachine.canSuccess = true;
+    }
     private void OnMouseEnter()
     {
     }
