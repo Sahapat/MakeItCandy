@@ -6,7 +6,7 @@ public class TopieMachine : Machine
 {
     [SerializeField]
     private Vector3 spawnPoint;
-    private bool isEmpty = true;
+    private GameObject spawnObject;
 
     public GameObject Topie = null;
 
@@ -15,40 +15,41 @@ public class TopieMachine : Machine
         workingTime = 3;
         maxSlot = 1;
     }
-    protected override void OnFinishWorking()
+    protected override bool OnFinishWorking()
     {
-        GameObject temp = Instantiate(this.Topie, spawnPoint, Quaternion.identity);
-        SweetUnits sweetUnits = temp.GetComponent<SweetUnits>();
-        sweetUnits.LastPosition = spawnPoint;
-        isEmpty = false;
+        if (spawnObject == null)
+        {
+            spawnObject = Instantiate(this.Topie, spawnPoint, Quaternion.identity);
+            SweetUnits sweetUnits = spawnObject.GetComponent<SweetUnits>();
+            sweetUnits.LastPosition = spawnPoint;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (!isWorking)
+        if (other.CompareTag("GameUnits"))
         {
-            if (other.CompareTag("GameUnits"))
+            SweetUnits unit = other.GetComponent<SweetUnits>();
+            if (unit.gameUnit == GameUnits.Candy)
             {
-                SweetUnits unit = other.GetComponent<SweetUnits>();
-                if (unit.gameUnit == GameUnits.Candy)
-                {
-                    unit.canPlace = true;
-                    unit.onMachine = OnMachine.Topie;
-                }
+                unit.canPlace = true;
+                unit.onMachine = OnMachine.Topie;
             }
         }
     }
     private void OnTriggerStay(Collider other)
     {
-        if (!isWorking)
+        if (other.CompareTag("GameUnits"))
         {
-            if (other.CompareTag("GameUnits"))
+            SweetUnits unit = other.GetComponent<SweetUnits>();
+            if (unit.gameUnit == GameUnits.Candy)
             {
-                SweetUnits unit = other.GetComponent<SweetUnits>();
-                if (unit.gameUnit == GameUnits.Candy)
-                {
-                    unit.canPlace = true;
-                    unit.onMachine = OnMachine.Topie;
-                }
+                unit.canPlace = true;
+                unit.onMachine = OnMachine.Topie;
             }
         }
     }
