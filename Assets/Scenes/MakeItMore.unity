@@ -1268,6 +1268,7 @@ MonoBehaviour:
   AddToMachine: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
   SuccessProduct: {fileID: 8300000, guid: 7e9ee6dc04a5d40d1a5dfc4beb9865e7, type: 3}
   avilableSlot: 0
+  timeCount: 0
   spawnPoint: {x: -4.105, y: 0.819, z: 0}
   Topie: {fileID: 1013530343741452, guid: 7ae372df86ba2d047ba1882614753271, type: 2}
 --- !u!65 &314682701
@@ -2531,6 +2532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14b8b630eb5308c48ab0ab181c6bc845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sugarLenght: 4
   AddPosition: {x: -11, y: -2.696849, z: 0}
   SugarPos:
   - {x: 1, y: -2.696849, z: 0}
@@ -2767,12 +2769,14 @@ MonoBehaviour:
   AddToMachine: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
   SuccessProduct: {fileID: 8300000, guid: 7e9ee6dc04a5d40d1a5dfc4beb9865e7, type: 3}
   avilableSlot: 0
+  timeCount: 0
   OnMachinePoint: {x: 8.17, y: 0.01873708, z: 0}
   spawnPoint: {x: 8.162, y: 0.6113914, z: 0}
   iceCreamFlavor: 1
   IceCreamAndCone: {fileID: 1268703360227306, guid: a6916a9b1a76f6d40964a15c23e958e3,
     type: 2}
   coneInput: {fileID: 0}
+  canPlace: 0
 --- !u!65 &998158359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2931,12 +2935,14 @@ MonoBehaviour:
   AddToMachine: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
   SuccessProduct: {fileID: 8300000, guid: 7e9ee6dc04a5d40d1a5dfc4beb9865e7, type: 3}
   avilableSlot: 0
+  timeCount: 0
   OnMachinePoint: {x: 6.873, y: 0.01873708, z: 0}
   spawnPoint: {x: 6.868, y: 0.6113914, z: 0}
   iceCreamFlavor: 2
   IceCreamAndCone: {fileID: 1268703360227306, guid: a6916a9b1a76f6d40964a15c23e958e3,
     type: 2}
   coneInput: {fileID: 0}
+  canPlace: 0
 --- !u!65 &1008955709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3328,12 +3334,14 @@ MonoBehaviour:
   AddToMachine: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
   SuccessProduct: {fileID: 8300000, guid: 7e9ee6dc04a5d40d1a5dfc4beb9865e7, type: 3}
   avilableSlot: 0
+  timeCount: 0
   spawnPoint: {x: 6.495141, y: -3.758489, z: 0}
   ConeType: 0
   ConeObj:
   - {fileID: 1061087084106324, guid: 56bf022b0d4ac2149b6dd39175efbe80, type: 2}
   - {fileID: 1756475030100034, guid: 18f0fe5db6e69d44db0e95bcf29170f9, type: 2}
   - {fileID: 1809297836830630, guid: 5993f3cc1556abc4da74dbcb813d1f57, type: 2}
+  canSuccess: 0
 --- !u!1 &1112852790
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,11 +4267,12 @@ MonoBehaviour:
   AddToMachine: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
   SuccessProduct: {fileID: 8300000, guid: 7e9ee6dc04a5d40d1a5dfc4beb9865e7, type: 3}
   avilableSlot: 0
+  timeCount: 0
+  spawnObject: []
   spawnPoint:
   - {x: -8.055, y: 0.0367, z: 0}
   - {x: -7.089, y: 0.0367, z: 0}
   - {x: -6.096, y: 0.0367, z: 0}
-  isEmpty: 
   Candy: {fileID: 1723378832661238, guid: 029c6505cae7e28409f31577a60a9824, type: 2}
 --- !u!65 &1396512896
 BoxCollider:
@@ -5278,6 +5287,7 @@ MonoBehaviour:
   AddToMachine: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
   SuccessProduct: {fileID: 8300000, guid: 7e9ee6dc04a5d40d1a5dfc4beb9865e7, type: 3}
   avilableSlot: 0
+  timeCount: 0
   spawnPoint: {x: 3.479, y: 1.068, z: 0}
   PopPop: {fileID: 1760536425343202, guid: f4cef4e9f4278f64886e3d93df715dd9, type: 2}
 --- !u!65 &1754933796
@@ -6193,6 +6203,7 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   newObjCenter: {x: 0, y: 0, z: 0}
   isDrag: 0
+  isMute: 1
   chocolateMachine: {fileID: 2122008972}
   vanilaMachine: {fileID: 998158354}
   orangeMachine: {fileID: 1008955704}
@@ -6640,12 +6651,14 @@ MonoBehaviour:
   AddToMachine: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
   SuccessProduct: {fileID: 8300000, guid: 7e9ee6dc04a5d40d1a5dfc4beb9865e7, type: 3}
   avilableSlot: 0
+  timeCount: 0
   OnMachinePoint: {x: 5.554626, y: 0.01873708, z: 0}
   spawnPoint: {x: 5.554626, y: 0.6113914, z: 0}
   iceCreamFlavor: 0
   IceCreamAndCone: {fileID: 1268703360227306, guid: a6916a9b1a76f6d40964a15c23e958e3,
     type: 2}
   coneInput: {fileID: 0}
+  canPlace: 0
 --- !u!65 &2122008976
 BoxCollider:
   m_ObjectHideFlags: 0
