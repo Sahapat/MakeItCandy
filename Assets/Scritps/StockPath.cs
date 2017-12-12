@@ -6,12 +6,7 @@ public class StockPath : MonoBehaviour
 {
     public Vector3[] requireBoxPos;
     public GameObject[] requireBox;
-    private HandleOrder handleOrder = null;
 
-    private void Awake()
-    {
-        handleOrder = FindObjectOfType<HandleOrder>();
-    }
     public bool CheckEmpty(ref int emptypos)
     {
         for(int i =0;i<3;i++)
