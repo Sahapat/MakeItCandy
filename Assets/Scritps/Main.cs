@@ -16,6 +16,7 @@ public class Main : MonoBehaviour
 
     private RaycastHit hit;
     public bool isDrag = false;
+    public bool isMute = false;
 
     private CandyMachine candyMachine;
     private PopPopMachine popMachine;
@@ -31,6 +32,7 @@ public class Main : MonoBehaviour
     private GamePause pause;
     private GameController gameController;
     private Trash trash = null;
+    private const float defualtThemeVolume = 0.65f;
     private void Awake()
     {
         candyMachine = FindObjectOfType<CandyMachine>();
@@ -43,7 +45,9 @@ public class Main : MonoBehaviour
     }
     private void Start()
     {
+        audioSource.mute = isMute;
         audioSource.clip = theme;
+        audioSource.volume = defualtThemeVolume;
         audioSource.loop = true;
         audioSource.Play();
     }
@@ -88,37 +92,79 @@ public class Main : MonoBehaviour
                             switch (unit.onMachine)
                             {
                                 case OnMachine.Candy:
-                                    unit.PlaceObject();
-                                    candyMachine.Add();
+                                    if(candyMachine.Add())
+                                    {
+                                        unit.PlaceObject();
+                                    }
+                                    else
+                                    {
+                                        unit.ToLastPostion();
+                                    }
                                     break;
                                 case OnMachine.Topie:
-                                    unit.PlaceObject();
-                                    topieMachine.Add();
+                                    if(topieMachine.Add())
+                                    {
+                                        unit.PlaceObject();
+                                    }
+                                    else
+                                    {
+                                        unit.ToLastPostion();
+                                    }
                                     break;
                                 case OnMachine.PopPop:
-                                    unit.PlaceObject();
-                                    popMachine.Add();
+                                    if(popMachine.Add())
+                                    {
+                                        unit.PlaceObject();
+                                    }
+                                    else
+                                    {
+                                        unit.ToLastPostion();
+                                    }
                                     break;
                                 case OnMachine.IceCreamChocolate:
                                     IceCreamMachine chochoc = chocolateMachine.GetComponent<IceCreamMachine>();
-                                    chochoc.coneInput = ObjectToMove;
-                                    chochoc.Add();
-                                    chochoc.AddConeFlavor(ObjectToMove.GetComponent<Cone>().flavor);
-                                    ObjectToMove.GetComponent<Cone>().PlaceOnMachine(chochoc.OnMachinePoint);
+                                    if (chochoc.canPlace)
+                                    {
+                                        chochoc.coneInput = ObjectToMove;
+                                        chochoc.Add();
+                                        chochoc.AddConeFlavor(ObjectToMove.GetComponent<Cone>().flavor);
+                                        ObjectToMove.GetComponent<Cone>().PlaceOnMachine(chochoc.OnMachinePoint);
+                                        chochoc.canPlace = false;
+                                    }
+                                    else
+                                    {
+                                        unit.ToLastPostion();
+                                    }
                                     break;
                                 case OnMachine.IceCreamVanila:
                                     IceCreamMachine Vanivani = vanilaMachine.GetComponent<IceCreamMachine>();
-                                    Vanivani.coneInput = ObjectToMove;
-                                    Vanivani.Add();
-                                    Vanivani.AddConeFlavor(ObjectToMove.GetComponent<Cone>().flavor);
-                                    ObjectToMove.GetComponent<Cone>().PlaceOnMachine(Vanivani.OnMachinePoint);
+                                    if (Vanivani.canPlace)
+                                    {
+                                        Vanivani.coneInput = ObjectToMove;
+                                        Vanivani.Add();
+                                        Vanivani.AddConeFlavor(ObjectToMove.GetComponent<Cone>().flavor);
+                                        ObjectToMove.GetComponent<Cone>().PlaceOnMachine(Vanivani.OnMachinePoint);
+                                        Vanivani.canPlace = false;
+                                    }
+                                    else
+                                    {
+                                        unit.ToLastPostion();
+                                    }
                                     break;
                                 case OnMachine.IceCreamOrange:
                                     IceCreamMachine Oror = orangeMachine.GetComponent<IceCreamMachine>();
-                                    Oror.coneInput = ObjectToMove;
-                                    Oror.Add();
-                                    Oror.AddConeFlavor(ObjectToMove.GetComponent<Cone>().flavor);
-                                    ObjectToMove.GetComponent<Cone>().PlaceOnMachine(Oror.OnMachinePoint);
+                                    if (Oror.canPlace)
+                                    {
+                                        Oror.coneInput = ObjectToMove;
+                                        Oror.Add();
+                                        Oror.AddConeFlavor(ObjectToMove.GetComponent<Cone>().flavor);
+                                        ObjectToMove.GetComponent<Cone>().PlaceOnMachine(Oror.OnMachinePoint);
+                                        Oror.canPlace = false;
+                                    }
+                                    else
+                                    {
+                                        unit.ToLastPostion();
+                                    }
                                     break;
                                 case OnMachine.Trash:
                                     unit.PlaceObject();
@@ -151,6 +197,7 @@ public class Main : MonoBehaviour
                 }
             }
         }
+        audioSource.mute = isMute;
     }
     IEnumerator StopTheme()
     {
