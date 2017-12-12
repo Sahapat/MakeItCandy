@@ -8,29 +8,34 @@ public class IceCreamMachine : Machine
     [SerializeField]
     private Vector3 spawnPoint;
     [SerializeField]
-    private Flavor iceCreamFlavor;
+    public Flavor iceCreamFlavor;
     private Flavor ConeFlavor;
     
     public GameObject IceCreamAndCone = null;
     public GameObject coneInput = null;
+    private GameObject spawnObject;
+
+    public bool canPlace;
     private void Start()
     {
         maxSlot = 1;
         workingTime = 2;
+        canPlace = true;
     }
     public void AddConeFlavor(Flavor flavor)
     {
         ConeFlavor = flavor;
     }
-    protected override void OnFinishWorking()
+    protected override bool OnFinishWorking()
     {
-        GameObject temp = Instantiate(IceCreamAndCone, spawnPoint, Quaternion.identity);
-        IceCreamMachine_Making iceCreamMaking = temp.GetComponent<IceCreamMachine_Making>();
+        Destroy(coneInput);
+        spawnObject = Instantiate(IceCreamAndCone, spawnPoint, Quaternion.identity);
+        IceCreamMachine_Making iceCreamMaking = spawnObject.GetComponent<IceCreamMachine_Making>();
         iceCreamMaking.ConeFlavor = ConeFlavor;
         iceCreamMaking.IceCreamFlavor = iceCreamFlavor;
         iceCreamMaking.LastPosition = spawnPoint;
         iceCreamMaking.isSet = true;
-        Destroy(coneInput);
+        return true;
     }
     private void OnTriggerEnter(Collider other)
     {
