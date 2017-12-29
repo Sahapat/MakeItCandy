@@ -35,6 +35,14 @@ public class SugarLineController : MonoBehaviour
     public void MoveSugar()
     {
         StartCoroutine(MovingSugar());
+        for (int i = 0; i < SugarOnLine.Length; i++)
+        {
+            if (SugarOnLine[i] != null)
+            {
+                Sugar sugar = SugarOnLine[i].GetComponent<Sugar>();
+                sugar.LastPosition = SugarPos[i];
+            }
+        }
     }
     private IEnumerator MovingSugar()
     {
@@ -56,19 +64,11 @@ public class SugarLineController : MonoBehaviour
     }
     private void SwapSugar(int emptyPos)
     {
-        for(int i = emptyPos;i<3;i++)
+        for(int i = emptyPos;i<SugarOnLine.Length-1;i++)
         {
             GameObject temp = SugarOnLine[i];
             SugarOnLine[i] = SugarOnLine[i + 1];
             SugarOnLine[i + 1] = temp;
-        }
-        for(int i=0;i<SugarOnLine.Length;i++)
-        {
-            if (SugarOnLine[i] != null)
-            {
-                Sugar sugar = SugarOnLine[i].GetComponent<Sugar>();
-                sugar.LastPosition = SugarPos[i];
-            }
         }
     }
     private void Update()

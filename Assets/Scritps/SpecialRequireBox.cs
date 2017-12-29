@@ -5,12 +5,10 @@ using UnityEngine;
 public class SpecialRequireBox : MonoBehaviour
 {
     public bool isSuccessOrder = false;
-    private GameUnits requireUnit;
-    private Flavor ConeFlavor;
-    private Flavor IceCreamFlavor;
-
-    public Sprite[] SpTop = null;
-    public Sprite[] SpBot = null;
+    public GameUnits requireUnit;
+    public Flavor ConeFlavor;
+    public Flavor IceCreamFlavor;
+    public bool isSprinkle;
 
     [SerializeField]
     private AudioClip addToRequireBox;
@@ -27,7 +25,6 @@ public class SpecialRequireBox : MonoBehaviour
     private SpriteRenderer requireBot = null;
     private AudioSource audioSource;
     private GameController gameController;
-    private bool isSet = false;
     private int startAmount;
     private int _amount = 0;
     public int amount
@@ -54,47 +51,6 @@ public class SpecialRequireBox : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         gameController = FindObjectOfType<GameController>();
     }
-    private void Update()
-    {
-        if(isSet)
-        {
-            if(requireUnit == GameUnits.ConeAndIceCream)
-            {
-                switch(IceCreamFlavor)
-                {
-                    case Flavor.Chocolate:
-                        requireTop.sprite = SpTop[0];
-                        break;
-                    case Flavor.Orange:
-                        requireTop.sprite = SpTop[1];
-                        break;
-                    case Flavor.Vanila:
-                        requireTop.sprite = SpTop[2];
-                        break;
-                    default:
-                        requireTop.sprite = null;
-                        break;
-                }
-                switch(ConeFlavor)
-                {
-                    case Flavor.Chocolate:
-                        requireBot.sprite = SpBot[0];
-                        break;
-                    case Flavor.Orange:
-                        requireBot.sprite = SpBot[1];
-                        break;
-                    case Flavor.Vanila:
-                        requireBot.sprite = SpBot[2];
-                        break;
-                    default:
-                        requireBot.sprite = null;
-                        break;
-                }
-                isSet = false;
-            }
-        }
-    }
-    //Sweet Units Enter
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("GameUnits"))
@@ -103,12 +59,18 @@ public class SpecialRequireBox : MonoBehaviour
             if (unit.gameUnit == requireUnit)
             {
                 IceCreamMachine_Making specialUnit = other.GetComponent<IceCreamMachine_Making>();
-                if (specialUnit.ConeFlavor == ConeFlavor && specialUnit.IceCreamFlavor == IceCreamFlavor)
+                if ((specialUnit.ConeFlavor == ConeFlavor && specialUnit.IceCreamFlavor == IceCreamFlavor))
                 {
                     unit.canPlace = true;
                     unit.onMachine = OnMachine.SpecialRequireBox;
                     unit.InRequireBox = gameObject;
                 }
+            }
+            if(unit.gameUnit == GameUnits.CandyFloss)
+            {
+                unit.canPlace = true;
+                unit.onMachine = OnMachine.SpecialRequireBox;
+                unit.InRequireBox = gameObject;
             }
         }
     }
@@ -127,6 +89,12 @@ public class SpecialRequireBox : MonoBehaviour
                     unit.InRequireBox = gameObject;
                 }
             }
+            if (unit.gameUnit == GameUnits.CandyFloss)
+            {
+                unit.canPlace = true;
+                unit.onMachine = OnMachine.SpecialRequireBox;
+                unit.InRequireBox = gameObject;
+            }
         }
     }
     private void OnTriggerExit(Collider other)
@@ -143,6 +111,11 @@ public class SpecialRequireBox : MonoBehaviour
         amount-=1;
         audioSource.PlayOneShot(addToRequireBox);
     }
+    public void FinishRequireBox()
+    {
+        amount = 0;
+        audioSource.PlayOneShot(successRequire);
+    }
     public void SuccessProduct()
     {
         audioSource.PlayOneShot(successRequire);
@@ -157,13 +130,23 @@ public class SpecialRequireBox : MonoBehaviour
         }
         gameController.AddMoney(addMoney);
     }
-    public void SettingRequirement(GameUnits units,Flavor coneFlavor,Flavor iceCreamFlavor,int amount)
+    public void SettingRequirement(GameUnits units,Flavor coneFlavor,Flavor iceCreamFlavor,bool isSprinkle,int amount)
     {
-        requireUnit = units;
+        SpriteRefSweetUnit spriteRef = FindObjectOfType<SpriteRefSweetUnit>();
         ConeFlavor = coneFlavor;
         IceCreamFlavor = iceCreamFlavor;
         this.amount = amount;
+        this.isSprinkle = isSprinkle;
+        if(this.isSprinkle)
+        {
+            this.requireUnit = GameUnits.ConeAndUceCreamAndSprinkle;
+        }
+        else
+        {
+            this.requireUnit = units;
+        }
         startAmount = amount;
-        isSet = true;
+        requireTop.sprite = spriteRef.getSpriteByType(GameUnits.IceCream, IceCreamFlavor, this.isSprinkle);
+        requireBot.sprite = spriteRef.getSpriteByType(GameUnits.Cone, ConeFlavor, false);
     }
 }

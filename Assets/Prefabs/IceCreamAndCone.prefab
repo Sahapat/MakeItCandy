@@ -9,51 +9,33 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1268703360227306}
+  m_RootGameObject: {fileID: 1447002886329860}
   m_IsPrefabParent: 1
---- !u!1 &1268703360227306
+--- !u!1 &1135029219757304
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4611925332408362}
-  - component: {fileID: 65442479865700540}
-  - component: {fileID: 54430101828586218}
-  - component: {fileID: 114636518606391896}
+  - component: {fileID: 4116973559846888}
+  - component: {fileID: 212363514515933682}
   m_Layer: 0
-  m_Name: IceCreamAndCone
-  m_TagString: GameUnits
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1368247052172916
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4251094465984858}
-  - component: {fileID: 212601211731284960}
-  m_Layer: 0
-  m_Name: IceCream
+  m_Name: Icecream
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1978968867581742
+--- !u!1 &1442663672525676
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4439104447427426}
-  - component: {fileID: 212913547752546786}
+  - component: {fileID: 4601595225304186}
+  - component: {fileID: 212966325008705742}
   m_Layer: 0
   m_Name: Cone
   m_TagString: Untagged
@@ -61,150 +43,119 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4251094465984858
+--- !u!1 &1447002886329860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4138270287904932}
+  - component: {fileID: 65750071701072742}
+  - component: {fileID: 114779811375436938}
+  - component: {fileID: 54261774703310390}
+  m_Layer: 0
+  m_Name: IcecreamAndCone
+  m_TagString: GameUnits
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4116973559846888
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1368247052172916}
+  m_GameObject: {fileID: 1135029219757304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.005, y: 0, z: 0}
-  m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
+  m_LocalPosition: {x: 0, y: 0.99, z: 0}
+  m_LocalScale: {x: 1.383334, y: 1.383334, z: 1.383334}
   m_Children: []
-  m_Father: {fileID: 4611925332408362}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4439104447427426
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1978968867581742}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.599, z: 0}
-  m_LocalScale: {x: 0.5590761, y: 0.5590761, z: 0.5590761}
-  m_Children: []
-  m_Father: {fileID: 4611925332408362}
+  m_Father: {fileID: 4138270287904932}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4611925332408362
+--- !u!4 &4138270287904932
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1268703360227306}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22818673, y: -1.6180989, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1447002886329860}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.878, y: -1.304, z: -10}
+  m_LocalScale: {x: 0.5590761, y: 0.5590761, z: 0.5590761}
   m_Children:
-  - {fileID: 4251094465984858}
-  - {fileID: 4439104447427426}
+  - {fileID: 4601595225304186}
+  - {fileID: 4116973559846888}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &54430101828586218
+--- !u!4 &4601595225304186
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1442663672525676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4138270287904932}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54261774703310390
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1268703360227306}
+  m_GameObject: {fileID: 1447002886329860}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65442479865700540
+--- !u!65 &65750071701072742
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1268703360227306}
+  m_GameObject: {fileID: 1447002886329860}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.62853, y: 1.342143, z: 1}
-  m_Center: {x: 0.00000023841858, y: -0.43012285, z: 0}
---- !u!114 &114636518606391896
+  m_Size: {x: 1.7654318, y: 2.7885487, z: 1}
+  m_Center: {x: -0.0059054946, y: 0.29758278, z: 0}
+--- !u!114 &114779811375436938
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1268703360227306}
+  m_GameObject: {fileID: 1447002886329860}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3f0b256d6fef6f47bf56966ce06c2e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUnit: 0
   onMachine: 12
   LastPosition: {x: 0, y: 0, z: 0}
   InRequireBox: {fileID: 0}
   canPlace: 0
   IceCreamFlavor: 3
   ConeFlavor: 3
-  isSet: 0
-  IceCream:
-  - {fileID: 21300044, guid: cd3388e0b32eaea4a925538133423472, type: 3}
-  - {fileID: 21300046, guid: cd3388e0b32eaea4a925538133423472, type: 3}
-  - {fileID: 21300042, guid: cd3388e0b32eaea4a925538133423472, type: 3}
-  Cone:
-  - {fileID: 21300070, guid: cd3388e0b32eaea4a925538133423472, type: 3}
-  - {fileID: 21300068, guid: cd3388e0b32eaea4a925538133423472, type: 3}
-  - {fileID: 21300072, guid: cd3388e0b32eaea4a925538133423472, type: 3}
-  obj_IceCream: {fileID: 1368247052172916}
-  obj_Cone: {fileID: 1978968867581742}
---- !u!212 &212601211731284960
+  isSprinkle: 0
+  obj_IceCream: {fileID: 1135029219757304}
+  obj_Cone: {fileID: 1442663672525676}
+--- !u!212 &212363514515933682
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1368247052172916}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1686769823
-  m_SortingLayer: 4
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300042, guid: cd3388e0b32eaea4a925538133423472, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.3100001, y: 0.97}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!212 &212913547752546786
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1978968867581742}
+  m_GameObject: {fileID: 1135029219757304}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -229,14 +180,56 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1348694547
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300068, guid: cd3388e0b32eaea4a925538133423472, type: 3}
+  m_Sprite: {fileID: 21300066, guid: 6c6191b11e6281e4887d2593cef9e03b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.16, y: 1.7900001}
+  m_Size: {x: 0.76, y: 0.55}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212966325008705742
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1442663672525676}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -2127785469
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300096, guid: 6c6191b11e6281e4887d2593cef9e03b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.01, y: 1.58}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

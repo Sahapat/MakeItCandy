@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class PopPop : SweetUnits
 {
-    private void Start()
+    private SpriteRenderer spriteRenderer = null;
+    private void Awake()
     {
-        gameUnit = GameUnits.PopPop;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    private void OnMouseEnter()
+    public void setUnitProperty(GameUnits unit,sugarFlavor flavor)
     {
-    }
-    private void OnMouseExit()
-    {
+        gameUnit = unit;
+        sugar_flavor = flavor;
+        spriteRenderer.sprite = FindObjectOfType<SpriteRefSweetUnit>().getSpriteByType(unit, flavor);
     }
 }

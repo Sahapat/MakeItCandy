@@ -21,6 +21,8 @@ public class Main : MonoBehaviour
     private CandyMachine candyMachine;
     private PopPopMachine popMachine;
     private TopieMachine topieMachine;
+    private ConeMachine coneMachine;
+    private SprinkleMachine sprinkleMachine;
 
     [SerializeField]
     private GameObject chocolateMachine;
@@ -37,7 +39,9 @@ public class Main : MonoBehaviour
     {
         candyMachine = FindObjectOfType<CandyMachine>();
         popMachine = FindObjectOfType<PopPopMachine>();
+        sprinkleMachine = FindObjectOfType<SprinkleMachine>();
         topieMachine = FindObjectOfType<TopieMachine>();
+        coneMachine = FindObjectOfType<ConeMachine>();
         audioSource = GetComponent<AudioSource>();
         gameController = FindObjectOfType<GameController>();
         pause = FindObjectOfType<GamePause>();
@@ -130,6 +134,8 @@ public class Main : MonoBehaviour
                                         chochoc.AddConeFlavor(ObjectToMove.GetComponent<Cone>().flavor);
                                         ObjectToMove.GetComponent<Cone>().PlaceOnMachine(chochoc.OnMachinePoint);
                                         chochoc.canPlace = false;
+                                        coneMachine.canSuccess = true;
+                                        coneMachine.spawnObject = null;
                                     }
                                     else
                                     {
@@ -145,6 +151,8 @@ public class Main : MonoBehaviour
                                         Vanivani.AddConeFlavor(ObjectToMove.GetComponent<Cone>().flavor);
                                         ObjectToMove.GetComponent<Cone>().PlaceOnMachine(Vanivani.OnMachinePoint);
                                         Vanivani.canPlace = false;
+                                        coneMachine.canSuccess = true;
+                                        coneMachine.spawnObject = null;
                                     }
                                     else
                                     {
@@ -160,6 +168,8 @@ public class Main : MonoBehaviour
                                         Oror.AddConeFlavor(ObjectToMove.GetComponent<Cone>().flavor);
                                         ObjectToMove.GetComponent<Cone>().PlaceOnMachine(Oror.OnMachinePoint);
                                         Oror.canPlace = false;
+                                        coneMachine.canSuccess = true;
+                                        coneMachine.spawnObject = null;
                                     }
                                     else
                                     {
@@ -173,6 +183,12 @@ public class Main : MonoBehaviour
                                 case OnMachine.RequireBox:
                                     if (unit.InRequireBox != null)
                                     {
+                                        if(unit.GetComponent<CandyFloss>() != null)
+                                        {
+                                            RequireBox requireBoxtemp = unit.InRequireBox.GetComponent<RequireBox>();
+                                            unit.PlaceObject();
+                                            requireBoxtemp.FinishRequireBox();
+                                        }
                                         RequireBox requireBox = unit.InRequireBox.GetComponent<RequireBox>();
                                         unit.PlaceObject();
                                         requireBox.AddProductToRequireBox();
@@ -181,9 +197,26 @@ public class Main : MonoBehaviour
                                 case OnMachine.SpecialRequireBox:
                                     if (unit.InRequireBox != null)
                                     {
+                                        if (unit.GetComponent<CandyFloss>() != null)
+                                        {
+                                            SpecialRequireBox requireBoxtemp = unit.InRequireBox.GetComponent<SpecialRequireBox>();
+                                            unit.PlaceObject();
+                                            requireBoxtemp.FinishRequireBox();
+                                        }
                                         SpecialRequireBox requireBox = unit.InRequireBox.GetComponent<SpecialRequireBox>();
                                         unit.PlaceObject();
                                         requireBox.AddProductToRequireBox();
+                                    }
+                                    break;
+                                case OnMachine.Sprinkle:
+                                    if(sprinkleMachine.Add())
+                                    {
+                                        sprinkleMachine.coneInput = ObjectToMove;
+                                        ObjectToMove.GetComponent<IceCreamMachine_Making>().PlaceOnMachine(sprinkleMachine.OnMachinePoint);
+                                    }
+                                    else
+                                    {
+                                        unit.ToLastPostion();
                                     }
                                     break;
                             }

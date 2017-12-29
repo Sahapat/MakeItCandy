@@ -5,13 +5,13 @@ using UnityEngine;
 public class HandleMachine_Destory : MonoBehaviour
 {
     public GameObject obj_Destory = null;
-
-    private void Update()
+    
+    private void OnEnable()
     {
-        if(obj_Destory != null)
+        if (obj_Destory != null)
         {
             RequireBox require = obj_Destory.GetComponent<RequireBox>();
-            if(require == null)
+            if (require == null)
             {
                 SpecialRequireBox spRequire = obj_Destory.GetComponent<SpecialRequireBox>();
                 spRequire.BeforeDestroy();

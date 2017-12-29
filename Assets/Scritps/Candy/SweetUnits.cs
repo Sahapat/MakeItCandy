@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,16 @@ public enum GameUnits
     Cone,
     IceCream,
     ConeAndIceCream,
+    CandyFloss,
+    ConeAndUceCreamAndSprinkle,
+    None
+};
+public enum sugarFlavor
+{
+    Orange,
+    Stawberry,
+    Grape,
+    PineApple,
     None
 };
 public enum Flavor
@@ -34,12 +45,14 @@ public enum OnMachine
     Trash,
     RequireBox,
     SpecialRequireBox,
+    Sprinkle,
     None
 };
 
 public class SweetUnits : MonoBehaviour
 {
-    public GameUnits gameUnit
+    public GameUnits gameUnit;
+    public sugarFlavor sugar_flavor
     {
         get;
         protected set;

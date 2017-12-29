@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4829597556157650}
   - component: {fileID: 212038807449569396}
-  - component: {fileID: 65887132754082088}
   - component: {fileID: 54866103045247268}
   - component: {fileID: 114036049816404036}
+  - component: {fileID: 65517625434445760}
   m_Layer: 0
   m_Name: Candy
   m_TagString: GameUnits
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1723378832661238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9142847, y: -8.134119, z: 0}
-  m_LocalScale: {x: 0.3605916, y: 0.3605916, z: 0.3605916}
+  m_LocalPosition: {x: -2.398508, y: -1.4041215, z: 0}
+  m_LocalScale: {x: 1.1499373, y: 1.1499373, z: 1.1499373}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +58,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65887132754082088
+--- !u!65 &65517625434445760
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -68,8 +68,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.0678475, y: 2.0529964, z: 0.2}
-  m_Center: {x: -0.078130186, y: 0.48649797, z: 0}
+  m_Size: {x: 1.4186141, y: 1.3370554, z: 0.2}
+  m_Center: {x: 0.0035628416, y: 0.034342546, z: 0}
 --- !u!114 &114036049816404036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,11 +81,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d565aa607ab12464ba32d7acee1a9053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUnit: 0
   onMachine: 12
   LastPosition: {x: 0, y: 0, z: 0}
   InRequireBox: {fileID: 0}
   canPlace: 0
-  onIndex: -1
 --- !u!212 &212038807449569396
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -116,14 +116,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1348694547
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300024, guid: cd3388e0b32eaea4a925538133423472, type: 3}
+  m_Sprite: {fileID: 21300098, guid: 6c6191b11e6281e4887d2593cef9e03b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.5600002, y: 1.08}
+  m_Size: {x: 0.89, y: 0.87}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

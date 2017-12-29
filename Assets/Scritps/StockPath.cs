@@ -7,9 +7,13 @@ public class StockPath : MonoBehaviour
     public Vector3[] requireBoxPos;
     public GameObject[] requireBox;
 
+    private void Start()
+    {
+        requireBox = new GameObject[requireBoxPos.Length];
+    }
     public bool CheckEmpty(ref int emptypos)
     {
-        for(int i =0;i<3;i++)
+        for(int i =0;i<requireBox.Length;i++)
         {
             if(requireBox[i] == null)
             {
@@ -21,7 +25,7 @@ public class StockPath : MonoBehaviour
     }
     public bool CheckSuccess(ref int successPos)
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < requireBox.Length; i++)
         {
             if (requireBox[i] != null)
             {

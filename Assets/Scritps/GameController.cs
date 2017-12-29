@@ -75,15 +75,27 @@ public class GameController : MonoBehaviour
     public int gameTime = 0;
     private GamePause pause;
     public GameObject EndGame;
+    private StoryScene storyScene;
+    private GameRequirement gameRequirement;
     private void Start()
     {
         timeCounter = FindObjectOfType<TimeCounter>();
         pause = FindObjectOfType<GamePause>();
         main = FindObjectOfType<Main>();
         audiosource = GetComponent<AudioSource>();
-        minute = 3;
-        second = 0;
-        money = 0;
+        storyScene = FindObjectOfType<StoryScene>();
+        gameRequirement = FindObjectOfType<GameRequirement>();
+        if (gameRequirement.isEndless)
+        {
+            minute = 3;
+            second = 0;
+            money = 0;
+        }
+        else
+        {
+            minute = LevelManager.minute;
+            second = LevelManager.second;
+        }
         StartCoroutine(gameStart());
     }
     private void Update()
@@ -102,7 +114,9 @@ public class GameController : MonoBehaviour
             {
                 isGameStart = false;
                 main.EndGame();
+                if (storyScene != null) storyScene.Lose();
                 EndGame.SetActive(true);
+                PlayerStats.highScore = (PlayerStats.highScore < money) ? money : PlayerStats.highScore;
                 audiosource.PlayOneShot(endgame);
             }
         }

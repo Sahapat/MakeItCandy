@@ -7,11 +7,13 @@ public class Trash : MonoBehaviour
     public AudioClip trashClip;
     private AudioSource audioSource;
     private GameController gameController = null;
+    private Animator anim = null;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
         gameController = FindObjectOfType<GameController>();
+        anim = GetComponent<Animator>();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -43,6 +45,7 @@ public class Trash : MonoBehaviour
     public void MinusMoney(GameUnits units)
     {
         audioSource.PlayOneShot(trashClip);
+        anim.SetTrigger("Working");
         int moneyMinus = 0;
         int timeMinus = 0;
         switch(units)

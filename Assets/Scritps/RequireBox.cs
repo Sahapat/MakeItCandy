@@ -6,7 +6,7 @@ public class RequireBox : MonoBehaviour
 {
     public bool isSuccessOrder;
     private GameUnits requireUnit;
-    public Sprite[] gameunit;
+    public sugarFlavor sugar_flavor;
     [SerializeField]
     private AudioClip addToRequirebox;
     [SerializeField]
@@ -18,7 +18,6 @@ public class RequireBox : MonoBehaviour
     private SpriteRenderer requireSprite = null;
     private AudioSource audioSource = null;
     private GameController gameController = null;
-    private bool isSet = false;
     private int startAmount;
     private int _amount = 0;
     public int amount
@@ -43,40 +42,13 @@ public class RequireBox : MonoBehaviour
         requireSprite = require.GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
         gameController = FindObjectOfType<GameController>();
-        requireSprite.sortingLayerName = "Other";
     }
-    private void Update()
-    {
-        if(isSet)
-        {
-            switch(requireUnit)
-            {
-                case GameUnits.Sugar:
-                    requireSprite.sprite = gameunit[0];
-                    break;
-                case GameUnits.PopPop:
-                    requireSprite.sprite = gameunit[2];
-                    break;
-                case GameUnits.Topie:
-                    requireSprite.sprite = gameunit[1];
-                    break;
-                case GameUnits.Candy:
-                    requireSprite.sprite = gameunit[3];
-                    break;
-                default:
-                    requireSprite.sprite = null;
-                    break;
-            }
-            isSet = false;
-        }
-    }
-    //Sweet Units Enter
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("GameUnits"))
         {
             SweetUnits unit = other.GetComponent<SweetUnits>();
-            if (requireUnit == unit.gameUnit)
+            if ((requireUnit == unit.gameUnit && sugar_flavor == unit.sugar_flavor) || unit.gameUnit == GameUnits.CandyFloss)
             {
                 unit.canPlace = true;
                 unit.onMachine = OnMachine.RequireBox;
@@ -89,7 +61,7 @@ public class RequireBox : MonoBehaviour
         if (other.CompareTag("GameUnits"))
         {
             SweetUnits unit = other.GetComponent<SweetUnits>();
-            if (requireUnit == unit.gameUnit)
+            if ((requireUnit == unit.gameUnit&& sugar_flavor == unit.sugar_flavor)||unit.gameUnit == GameUnits.CandyFloss)
             {
                 unit.canPlace = true;
                 unit.onMachine = OnMachine.RequireBox;
@@ -107,17 +79,23 @@ public class RequireBox : MonoBehaviour
             unit.InRequireBox = null;
         }
     }
-    public void SetttingRequirement(GameUnits requireUnit,int amount)
+    public void SetttingRequirement(GameUnits requireUnit,sugarFlavor flavor,int amount)
     {
         this.requireUnit = requireUnit;
         this.amount = amount;
+        this.sugar_flavor = (requireUnit == GameUnits.Sugar)?sugarFlavor.None:flavor;
         this.startAmount = amount;
-        isSet = true;
+        requireSprite.sprite = FindObjectOfType<SpriteRefSweetUnit>().getSpriteByType(requireUnit, flavor);
     }
     public void AddProductToRequireBox()
     {
         amount-=1;
         audioSource.PlayOneShot(addToRequirebox);
+    }
+    public void FinishRequireBox()
+    {
+        amount = 0;
+        audioSource.PlayOneShot(successRequire);
     }
     public void SuccessProduct()
     {

@@ -16,6 +16,10 @@ public class CandyMachine : Machine
         workingTime = 2;
         spawnObject = new GameObject[spawnPoint.Length];
     }
+    public override void OnAddProduct()
+    {
+        anim.SetInteger("avilableSlot", avilableSlot);
+    }
     protected override bool OnFinishWorking()
     {
         for(int i =0;i<spawnObject.Length;i++)

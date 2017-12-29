@@ -49,6 +49,9 @@ TagManager:
   - name: Machine
     uniqueID: 3133035025
     locked: 0
+  - name: MachineAcessory
+    uniqueID: 2167181827
+    locked: 0
   - name: GameUnits
     uniqueID: 2946272749
     locked: 0

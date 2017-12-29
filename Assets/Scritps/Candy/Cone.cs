@@ -6,6 +6,8 @@ public class Cone : SweetUnits
 {
     public Flavor flavor = Flavor.None;
     private ConeMachine coneMachine;
+    private SpriteRefSweetUnit spriteRef;
+    private SpriteRenderer spriteRenderer;
     private void Start()
     {
         gameUnit = GameUnits.Cone;
@@ -17,32 +19,29 @@ public class Cone : SweetUnits
         LastPosition = pos;
         coneMachine.canSuccess = true;
     }
+    protected override void BeforeDestroy()
+    {
+        coneMachine.canSuccess = true;
+    }
     public void setFlavor(int flavor)
     {
+        spriteRef = FindObjectOfType<SpriteRefSweetUnit>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         switch(flavor)
         {
             case 0:
                 this.flavor = Flavor.Chocolate;
                 break;
             case 1:
-                this.flavor = Flavor.Vanila;
+                this.flavor = Flavor.Orange;
                 break;
             case 2:
-                this.flavor = Flavor.Orange;
+                this.flavor = Flavor.Vanila;
                 break;
             default:
                 this.flavor = Flavor.None;
                 break;
         }
-    }
-    protected override void BeforeDestroy()
-    {
-        coneMachine.canSuccess = true;
-    }
-    private void OnMouseEnter()
-    {
-    }
-    private void OnMouseExit()
-    {
+        spriteRenderer.sprite = spriteRef.getSpriteByType(GameUnits.Cone, this.flavor, false);
     }
 }

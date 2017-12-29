@@ -19,7 +19,7 @@ public class IceCreamMachine : Machine
     private void Start()
     {
         maxSlot = 1;
-        workingTime = 2;
+        workingTime = 2f;
         canPlace = true;
     }
     public void AddConeFlavor(Flavor flavor)
@@ -31,10 +31,8 @@ public class IceCreamMachine : Machine
         Destroy(coneInput);
         spawnObject = Instantiate(IceCreamAndCone, spawnPoint, Quaternion.identity);
         IceCreamMachine_Making iceCreamMaking = spawnObject.GetComponent<IceCreamMachine_Making>();
-        iceCreamMaking.ConeFlavor = ConeFlavor;
-        iceCreamMaking.IceCreamFlavor = iceCreamFlavor;
+        iceCreamMaking.setUnitProperty(ConeFlavor, iceCreamFlavor, false);
         iceCreamMaking.LastPosition = spawnPoint;
-        iceCreamMaking.isSet = true;
         return true;
     }
     private void OnTriggerEnter(Collider other)

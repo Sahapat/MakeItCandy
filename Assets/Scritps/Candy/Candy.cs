@@ -7,14 +7,6 @@ public class Candy : SweetUnits
     private void Start()
     {
         gameUnit = GameUnits.Candy;
-    }
-    protected override void BeforeDestroy()
-    {
-    }
-    private void OnMouseEnter()
-    {
-    }
-    private void OnMouseExit()
-    {
+        sugar_flavor = sugarFlavor.None;
     }
 }

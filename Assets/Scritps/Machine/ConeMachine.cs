@@ -7,20 +7,23 @@ public class ConeMachine : Machine
     [SerializeField]
     private Vector3 spawnPoint;
     public int ConeType;
-    public GameObject[] ConeObj;
+    public GameObject ConeObj;
+    public GameObject spawnObject;
     public bool canSuccess;
+    private ConeMachineSelect coneMachineSelect;
 
     private void Start()
     {
         workingTime = 1.4f;
         maxSlot = 1;
         canSuccess = true;
+        coneMachineSelect = FindObjectOfType<ConeMachineSelect>();
     }
     protected override bool OnFinishWorking()
     {
         if(canSuccess)
         {
-            GameObject spawnObject = Instantiate(ConeObj[ConeType], spawnPoint, Quaternion.identity);
+            spawnObject = Instantiate(ConeObj, spawnPoint, Quaternion.identity);
             Cone cone = spawnObject.GetComponent<Cone>();
             cone.setFlavor(ConeType);
             cone.LastPosition = spawnPoint;
@@ -35,5 +38,6 @@ public class ConeMachine : Machine
     public override void OnAddProduct()
     {
         anim.SetInteger("ConeType", ConeType);
+        coneMachineSelect.boxCollider.enabled = false;
     }
 }

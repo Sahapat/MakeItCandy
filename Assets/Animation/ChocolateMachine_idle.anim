@@ -27,10 +27,10 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: chocolate
+    path: icecream
   m_FloatCurves: []
   m_PPtrCurves: []
-  m_SampleRate: 60
+  m_SampleRate: 20
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -38,7 +38,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 645624620
+      path: 1455195946
       attribute: 3
       script: {fileID: 0}
       typeID: 4
@@ -79,7 +79,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: chocolate
+    path: icecream
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -95,7 +95,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: chocolate
+    path: icecream
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -111,7 +111,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: chocolate
+    path: icecream
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []

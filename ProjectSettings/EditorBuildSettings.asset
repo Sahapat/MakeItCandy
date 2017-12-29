@@ -11,3 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MakeItMore.unity
     guid: c8e0cc7c4f44f724bae2848a32c7ac0b
+  - enabled: 1
+    path: Assets/Scenes/LevelSelector.unity
+    guid: e82912be9b8d9674989fee0ad7bc24da
+  - enabled: 1
+    path: Assets/Scenes/StoryMode.unity
+    guid: bb2b7836c1edae845919659c9619b92f
+  - enabled: 1
+    path: Assets/Scenes/Scoreboard.unity
+    guid: 77d3b3e7983cee441976ee49d91e280a

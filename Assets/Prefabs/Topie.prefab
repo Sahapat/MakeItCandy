@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4387602942288002}
   - component: {fileID: 212160659684375282}
-  - component: {fileID: 65685103792230726}
   - component: {fileID: 114950998432648492}
   - component: {fileID: 54383647546471958}
+  - component: {fileID: 65316281216811250}
   m_Layer: 0
   m_Name: Topie
   m_TagString: GameUnits
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1013530343741452}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.41, y: -11.492916, z: 0}
-  m_LocalScale: {x: 0.6080843, y: 0.6080843, z: 0.6080843}
+  m_LocalPosition: {x: -1.864973, y: -1.0151627, z: 0}
+  m_LocalScale: {x: 1.2664675, y: 1.2664675, z: 1.2664675}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +58,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65685103792230726
+--- !u!65 &65316281216811250
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -68,8 +68,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.85, y: 1.64, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.3249221, y: 1.3636647, z: 0.2}
+  m_Center: {x: 0.003718503, y: -0.033467185, z: 0}
 --- !u!114 &114950998432648492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,6 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa75f23c0a6118f48bef75dee6cff235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameUnit: 0
   onMachine: 12
   LastPosition: {x: 0, y: 0, z: 0}
   InRequireBox: {fileID: 0}
@@ -115,14 +116,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1348694547
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300028, guid: cd3388e0b32eaea4a925538133423472, type: 3}
+  m_Sprite: {fileID: 21300056, guid: 6c6191b11e6281e4887d2593cef9e03b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.85, y: 1.64}
+  m_Size: {x: 1.02, y: 0.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

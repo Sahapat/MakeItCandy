@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4049589733765252}
   - component: {fileID: 212255856359944094}
-  - component: {fileID: 65031215240337844}
   - component: {fileID: 114229799235547988}
   - component: {fileID: 54715400045401344}
+  - component: {fileID: 65372415322757916}
   m_Layer: 0
   m_Name: Sugar
   m_TagString: GameUnits
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1726596616517624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: -11.52, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.3, y: -2.71, z: 0}
+  m_LocalScale: {x: 1.4175696, y: 1.4175696, z: 1.4175696}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -58,7 +58,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65031215240337844
+--- !u!65 &65372415322757916
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -68,7 +68,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.64, y: 1.5300001, z: 0.2}
+  m_Size: {x: 0.96, y: 0.89, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114229799235547988
 MonoBehaviour:
@@ -115,14 +115,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1348694547
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300032, guid: cd3388e0b32eaea4a925538133423472, type: 3}
+  m_Sprite: {fileID: 21300070, guid: 6c6191b11e6281e4887d2593cef9e03b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.64, y: 1.5300001}
+  m_Size: {x: 0.96, y: 0.89}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

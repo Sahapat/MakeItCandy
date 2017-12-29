@@ -6,20 +6,43 @@ public class PopPopMachine : Machine
 {
     [SerializeField]
     private Vector3 spawnPoint;
+    [SerializeField]
+    private GameObject objState;
+
+    private sugarFlavor _flavorState;
+    public sugarFlavor flavorState
+    {
+        get
+        {
+            return _flavorState;
+        }
+        set
+        {
+            _flavorState = value;
+            stateSprite.sprite = spriteRefSweetUnit.getSpriteByType(_flavorState);
+        }
+    }
+
     private GameObject spawnObject;
-    public GameObject PopPop;
+    private SpriteRenderer stateSprite;
+    private SpriteRefSweetUnit spriteRefSweetUnit;
+    public GameObject popPop;
     private void Start()
     {
         maxSlot = 1;
         workingTime = 3;
+        stateSprite = objState.GetComponent<SpriteRenderer>();
+        spriteRefSweetUnit = FindObjectOfType<SpriteRefSweetUnit>();
+        flavorState = sugarFlavor.Orange;
     }
     protected override bool OnFinishWorking()
     {
         if (spawnObject == null)
         {
-            spawnObject = Instantiate(this.PopPop, spawnPoint, Quaternion.identity);
-            SweetUnits sweetUnits = spawnObject.GetComponent<SweetUnits>();
+            spawnObject = Instantiate(popPop, spawnPoint, Quaternion.identity);
+            PopPop sweetUnits = spawnObject.GetComponent<PopPop>();
             sweetUnits.LastPosition = spawnPoint;
+            sweetUnits.setUnitProperty(GameUnits.PopPop, flavorState);
             return true;
         }
         else
