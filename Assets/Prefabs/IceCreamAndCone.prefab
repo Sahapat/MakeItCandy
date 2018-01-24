@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 114779811375436938}
   - component: {fileID: 54261774703310390}
   m_Layer: 0
-  m_Name: IcecreamAndCone
+  m_Name: IceCreamAndCone
   m_TagString: GameUnits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
