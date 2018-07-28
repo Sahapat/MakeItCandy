@@ -8,4 +8,5 @@ Player is a manager who has to make candy by orders.
 Game game is make candy and serve to the order. <br>
 #### &ensp;-Drag&Drop
 &emsp;To move object in the game.<br>
-![](https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-.gif) ![](https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-.gif)
+![alt-text-1](https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-.gif)
+![alt-text-2](https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-.gif)
