@@ -10,6 +10,6 @@ Game game is make candy and serve to the order. <br>
 &emsp;To move object in the game.<br>
 <p float="left">
     <img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-_2.gif" width="420"/>
-    &ensp;
+    &emsp;
     <img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-_2.gif" width="420"/>
 </p>
