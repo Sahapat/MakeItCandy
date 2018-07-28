@@ -15,6 +15,6 @@ Game game is make candy and serve to the order. <br>
     &emsp;
     <img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-.gif" width="420"/>
 </p>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **Move success** **Move fail**
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; **Move success** **Move fail**
 
 #### &ensp; -Hold
