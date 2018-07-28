@@ -6,5 +6,5 @@ Player is a manager who has to make candy by orders.
 
 ### Gameplay
 Game game is make candy and serve to the order. <br>
-#### -Drag&Drop
-&emsp;To move object in the game.
+#### &emsp;-Drag&Drop
+&emsp;&emsp;To move object in the game.
