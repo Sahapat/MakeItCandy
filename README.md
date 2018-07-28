@@ -7,7 +7,7 @@ Player is a manager who has to make candy by orders.
 ### Gameplay
 Game game is make candy and serve to the order. <br>
 #### &ensp;-Drag&Drop
-&emsp;Move object in the game.<br>
+&emsp;<strong>Move object in the game.</strong><br>
 
 <p float="left">
     &ensp;
@@ -15,7 +15,7 @@ Game game is make candy and serve to the order. <br>
     &emsp;
     <img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-.gif" width="420"/>
 </p>
-&emsp;<strong>For moving object. Player have to drop into machine that match with drag's item if so item will be in the last position.</strong>
+&emsp;For moving object. Player have to drop into machine that match with drag's item if so item will be in the last position.
 
 #### &ensp; -Hold
 
