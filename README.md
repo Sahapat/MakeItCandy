@@ -9,6 +9,7 @@ Game game is make candy and serve to the order. <br>
 #### &ensp;-Drag&Drop
 &emsp;To move object in the game.<br>
 <p float="left">
+    &ensp;
     <img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-_2.gif" width="420"/>
     &emsp;
     <img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-_2.gif" width="420"/>
