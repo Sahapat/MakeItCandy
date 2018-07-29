@@ -39,11 +39,11 @@ Game game is make candy and serve to the order. <br>
 &emsp;The special item is from in the upper right side. There is a charge that can charge up by complete order. For this item you can complete one order.
 
 ### Goal
-&emsp;<img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/CompleteOrder.gif">
+<img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/CompleteOrder.gif">
 &emsp; Complete all orders and collect money as much as you can.
 #### &emsp; -Story mode
-&emsp; &ensp;<img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Pass.jpg">
+<img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Pass.jpg">
 &emsp; &ensp; In story mode, there is order in one day. Player have to complete all order to finish the level.
 #### &emsp; -Make It More mode
-&emsp; &ensp;<img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/TimeOut.jpg">
+<img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/TimeOut.jpg">
 &emsp; &ensp; In this mode,you must collect money(score) as much as you can by complete the order.
