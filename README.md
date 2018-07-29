@@ -1,6 +1,8 @@
 # MakeItCandy CGM242 Project
 Make it candy is game project in CGM242. This project is 2D casual game made by Unity.
 <img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Game.jpg">
+## Our Team
+- [Sahapat](https://www.facebook.com/sahapat.tongon)
 ### High concept
 Player is a manager who has to make candy by orders.
 
