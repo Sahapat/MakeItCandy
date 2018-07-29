@@ -15,7 +15,7 @@ Game game is make candy and serve to the order. <br>
     &emsp;
     <img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Drag%26Drop-Fail-.gif" width="420"/>
 </p>
-&emsp;For moving object. Player have to drop into machine that match with drag's item if so item will be in the last position.
+&emsp;For moving object. Player must drop into machine that match with drag's item if so item will be in the last position.
 
 #### &ensp; -Hold
 
@@ -26,3 +26,5 @@ Game game is make candy and serve to the order. <br>
     <img src="https://github.com/Sahapat/MakeItCandy-Android-/blob/master/Captures/Cone_hold.gif" width="420"/>
 </p>
 &emsp;Hold on candy machine to select candy favor before manufactor. And Hold on cone machine to manufactor a cone.
+
+### Goal
