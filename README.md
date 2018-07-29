@@ -4,7 +4,7 @@ Make it candy is game project in CGM242. This project is 2D casual game made by 
 ## Our Team
 - [Sahapat tong-on](https://www.facebook.com/sahapat.tongon)
 ## Game
-<strong>High Concept</strong>Player is a manager who has to make candy by orders.
+<strong>High Concept</strong> &ensp;Player is a manager who has to make candy by orders.
 
 ### Gameplay
 Game game is make candy and serve to the order. <br>
