@@ -53,5 +53,5 @@ Game game is make candy and serve to the order. <br>
 &emsp; &ensp; In this mode,you must collect money(score) as much as you can by complete the order.
 
 ## Download
-- [PC Version](https://drive.google.com/uc?export=download&id=1-Ig1glL2Vo27uG4uN1b4QfHHPTtUVbOS)
-- [Android Version](https://drive.google.com/uc?export=download&id=10f9uNggEUPdQoKuhYUGCKjU0iPs8q6fV)
+- [PC Version](https://drive.google.com/uc?export=download&id=131EtJ4fvKMO4P9uGVH496V3nVVg_iT8M)
+- [Android Version](https://drive.google.com/uc?export=download&id=1r3JUQH5514GQV8DXr--Qid0zfKq_8YKr)
