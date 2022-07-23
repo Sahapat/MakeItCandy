@@ -1,98 +1,273 @@
 fileFormatVersion: 2
 guid: 6c6191b11e6281e4887d2593cef9e03b
-timeCreated: 1513172158
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: AllGameObject(New)_0
-    21300002: AllGameObject(New)_1
-    21300004: AllGameObject(New)_2
-    21300006: AllGameObject(New)_3
-    21300008: AllGameObject(New)_4
-    21300010: AllGameObject(New)_5
-    21300012: AllGameObject(New)_6
-    21300014: AllGameObject(New)_7
-    21300016: AllGameObject(New)_8
-    21300018: AllGameObject(New)_9
-    21300020: AllGameObject(New)_10
-    21300022: AllGameObject(New)_11
-    21300024: AllGameObject(New)_12
-    21300026: AllGameObject(New)_13
-    21300028: AllGameObject(New)_14
-    21300030: AllGameObject(New)_15
-    21300032: AllGameObject(New)_16
-    21300034: AllGameObject(New)_17
-    21300036: AllGameObject(New)_18
-    21300038: AllGameObject(New)_19
-    21300040: AllGameObject(New)_20
-    21300042: AllGameObject(New)_21
-    21300044: AllGameObject(New)_22
-    21300046: AllGameObject(New)_23
-    21300048: AllGameObject(New)_24
-    21300050: AllGameObject(New)_25
-    21300052: AllGameObject(New)_26
-    21300054: AllGameObject(New)_27
-    21300056: AllGameObject(New)_28
-    21300058: AllGameObject(New)_29
-    21300060: AllGameObject(New)_30
-    21300062: AllGameObject(New)_31
-    21300064: AllGameObject(New)_32
-    21300066: AllGameObject(New)_33
-    21300068: AllGameObject(New)_34
-    21300070: AllGameObject(New)_35
-    21300072: AllGameObject(New)_36
-    21300074: AllGameObject(New)_37
-    21300076: AllGameObject(New)_38
-    21300078: AllGameObject(New)_39
-    21300080: AllGameObject(New)_40
-    21300082: AllGameObject(New)_41
-    21300084: AllGameObject(New)_42
-    21300086: AllGameObject(New)_43
-    21300088: AllGameObject(New)_44
-    21300090: AllGameObject(New)_45
-    21300092: AllGameObject(New)_46
-    21300094: AllGameObject(New)_47
-    21300096: AllGameObject(New)_48
-    21300098: AllGameObject(New)_49
-    21300100: AllGameObject(New)_50
-    21300102: AllGameObject(New)_51
-    21300104: AllGameObject(New)_52
-    21300106: AllGameObject(New)_53
-    21300108: AllGameObject(New)_54
-    21300110: AllGameObject(New)_55
-    21300112: AllGameObject(New)_56
-    21300114: AllGameObject(New)_58
-    21300116: AllGameObject(New)_60
-    21300118: AllGameObject(New)_64
-    21300120: AllGameObject(New)_65
-    21300122: AllGameObject(New)_66
-    21300124: AllGameObject(New)_67
-    21300126: AllGameObject(New)_68
-    21300128: AllGameObject(New)_71
-    21300130: AllGameObject(New)_72
-    21300132: AllGameObject(New)_73
-    21300134: AllGameObject(New)_74
-    21300136: AllGameObject(New)_75
-    21300138: AllGameObject(New)_80
-    21300140: AllGameObject(New)_87
-    21300142: AllGameObject(New)_88
-    21300144: AllGameObject(New)_89
-    21300146: AllGameObject(New)_61
-    21300148: AllGameObject(New)_57
-    21300150: AllGameObject(New)_59
-    21300152: AllGameObject(New)_62
-    21300154: AllGameObject(New)_63
-    21300156: AllGameObject(New)_69
-    21300158: AllGameObject(New)_70
-    21300160: AllGameObject(New)_76
-    21300162: AllGameObject(New)_77
-    21300164: AllGameObject(New)_78
-    21300166: AllGameObject(New)_79
-    21300168: AllGameObject(New)_84
-    21300170: AllGameObject(New)_91
-    21300172: AllGameObject(New)_92
-    21300174: AllGameObject(New)_93
-  serializedVersion: 4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: AllGameObject(New)_0
+  - first:
+      213: 21300002
+    second: AllGameObject(New)_1
+  - first:
+      213: 21300004
+    second: AllGameObject(New)_2
+  - first:
+      213: 21300006
+    second: AllGameObject(New)_3
+  - first:
+      213: 21300008
+    second: AllGameObject(New)_4
+  - first:
+      213: 21300010
+    second: AllGameObject(New)_5
+  - first:
+      213: 21300012
+    second: AllGameObject(New)_6
+  - first:
+      213: 21300014
+    second: AllGameObject(New)_7
+  - first:
+      213: 21300016
+    second: AllGameObject(New)_8
+  - first:
+      213: 21300018
+    second: AllGameObject(New)_9
+  - first:
+      213: 21300020
+    second: AllGameObject(New)_10
+  - first:
+      213: 21300022
+    second: AllGameObject(New)_11
+  - first:
+      213: 21300024
+    second: AllGameObject(New)_12
+  - first:
+      213: 21300026
+    second: AllGameObject(New)_13
+  - first:
+      213: 21300028
+    second: AllGameObject(New)_14
+  - first:
+      213: 21300030
+    second: AllGameObject(New)_15
+  - first:
+      213: 21300032
+    second: AllGameObject(New)_16
+  - first:
+      213: 21300034
+    second: AllGameObject(New)_17
+  - first:
+      213: 21300036
+    second: AllGameObject(New)_18
+  - first:
+      213: 21300038
+    second: AllGameObject(New)_19
+  - first:
+      213: 21300040
+    second: AllGameObject(New)_20
+  - first:
+      213: 21300042
+    second: AllGameObject(New)_21
+  - first:
+      213: 21300044
+    second: AllGameObject(New)_22
+  - first:
+      213: 21300046
+    second: AllGameObject(New)_23
+  - first:
+      213: 21300048
+    second: AllGameObject(New)_24
+  - first:
+      213: 21300050
+    second: AllGameObject(New)_25
+  - first:
+      213: 21300052
+    second: AllGameObject(New)_26
+  - first:
+      213: 21300054
+    second: AllGameObject(New)_27
+  - first:
+      213: 21300056
+    second: AllGameObject(New)_28
+  - first:
+      213: 21300058
+    second: AllGameObject(New)_29
+  - first:
+      213: 21300060
+    second: AllGameObject(New)_30
+  - first:
+      213: 21300062
+    second: AllGameObject(New)_31
+  - first:
+      213: 21300064
+    second: AllGameObject(New)_32
+  - first:
+      213: 21300066
+    second: AllGameObject(New)_33
+  - first:
+      213: 21300068
+    second: AllGameObject(New)_34
+  - first:
+      213: 21300070
+    second: AllGameObject(New)_35
+  - first:
+      213: 21300072
+    second: AllGameObject(New)_36
+  - first:
+      213: 21300074
+    second: AllGameObject(New)_37
+  - first:
+      213: 21300076
+    second: AllGameObject(New)_38
+  - first:
+      213: 21300078
+    second: AllGameObject(New)_39
+  - first:
+      213: 21300080
+    second: AllGameObject(New)_40
+  - first:
+      213: 21300082
+    second: AllGameObject(New)_41
+  - first:
+      213: 21300084
+    second: AllGameObject(New)_42
+  - first:
+      213: 21300086
+    second: AllGameObject(New)_43
+  - first:
+      213: 21300088
+    second: AllGameObject(New)_44
+  - first:
+      213: 21300090
+    second: AllGameObject(New)_45
+  - first:
+      213: 21300092
+    second: AllGameObject(New)_46
+  - first:
+      213: 21300094
+    second: AllGameObject(New)_47
+  - first:
+      213: 21300096
+    second: AllGameObject(New)_48
+  - first:
+      213: 21300098
+    second: AllGameObject(New)_49
+  - first:
+      213: 21300100
+    second: AllGameObject(New)_50
+  - first:
+      213: 21300102
+    second: AllGameObject(New)_51
+  - first:
+      213: 21300104
+    second: AllGameObject(New)_52
+  - first:
+      213: 21300106
+    second: AllGameObject(New)_53
+  - first:
+      213: 21300108
+    second: AllGameObject(New)_54
+  - first:
+      213: 21300110
+    second: AllGameObject(New)_55
+  - first:
+      213: 21300112
+    second: AllGameObject(New)_56
+  - first:
+      213: 21300114
+    second: AllGameObject(New)_58
+  - first:
+      213: 21300116
+    second: AllGameObject(New)_60
+  - first:
+      213: 21300118
+    second: AllGameObject(New)_64
+  - first:
+      213: 21300120
+    second: AllGameObject(New)_65
+  - first:
+      213: 21300122
+    second: AllGameObject(New)_66
+  - first:
+      213: 21300124
+    second: AllGameObject(New)_67
+  - first:
+      213: 21300126
+    second: AllGameObject(New)_68
+  - first:
+      213: 21300128
+    second: AllGameObject(New)_71
+  - first:
+      213: 21300130
+    second: AllGameObject(New)_72
+  - first:
+      213: 21300132
+    second: AllGameObject(New)_73
+  - first:
+      213: 21300134
+    second: AllGameObject(New)_74
+  - first:
+      213: 21300136
+    second: AllGameObject(New)_75
+  - first:
+      213: 21300138
+    second: AllGameObject(New)_80
+  - first:
+      213: 21300140
+    second: AllGameObject(New)_87
+  - first:
+      213: 21300142
+    second: AllGameObject(New)_88
+  - first:
+      213: 21300144
+    second: AllGameObject(New)_89
+  - first:
+      213: 21300146
+    second: AllGameObject(New)_61
+  - first:
+      213: 21300148
+    second: AllGameObject(New)_57
+  - first:
+      213: 21300150
+    second: AllGameObject(New)_59
+  - first:
+      213: 21300152
+    second: AllGameObject(New)_62
+  - first:
+      213: 21300154
+    second: AllGameObject(New)_63
+  - first:
+      213: 21300156
+    second: AllGameObject(New)_69
+  - first:
+      213: 21300158
+    second: AllGameObject(New)_70
+  - first:
+      213: 21300160
+    second: AllGameObject(New)_76
+  - first:
+      213: 21300162
+    second: AllGameObject(New)_77
+  - first:
+      213: 21300164
+    second: AllGameObject(New)_78
+  - first:
+      213: 21300166
+    second: AllGameObject(New)_79
+  - first:
+      213: 21300168
+    second: AllGameObject(New)_84
+  - first:
+      213: 21300170
+    second: AllGameObject(New)_91
+  - first:
+      213: 21300172
+    second: AllGameObject(New)_92
+  - first:
+      213: 21300174
+    second: AllGameObject(New)_93
+  externalObjects: {}
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -110,6 +285,10 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -118,9 +297,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -1
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -132,49 +311,71 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: WebGL
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -192,6 +393,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_1
       rect:
@@ -206,6 +414,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_2
       rect:
@@ -220,6 +435,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_3
       rect:
@@ -234,6 +456,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_4
       rect:
@@ -248,6 +477,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_5
       rect:
@@ -262,6 +498,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_6
       rect:
@@ -276,6 +519,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_7
       rect:
@@ -290,6 +540,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_8
       rect:
@@ -304,6 +561,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_9
       rect:
@@ -318,6 +582,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_10
       rect:
@@ -332,6 +603,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_11
       rect:
@@ -346,6 +624,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_12
       rect:
@@ -360,6 +645,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_13
       rect:
@@ -374,6 +666,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_14
       rect:
@@ -388,6 +687,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_15
       rect:
@@ -402,6 +708,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_16
       rect:
@@ -416,6 +729,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_17
       rect:
@@ -430,6 +750,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_18
       rect:
@@ -444,6 +771,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_19
       rect:
@@ -458,6 +792,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_20
       rect:
@@ -472,6 +813,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_21
       rect:
@@ -486,6 +834,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_22
       rect:
@@ -500,6 +855,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_23
       rect:
@@ -514,6 +876,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_24
       rect:
@@ -528,6 +897,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_25
       rect:
@@ -542,6 +918,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_26
       rect:
@@ -556,6 +939,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_27
       rect:
@@ -570,6 +960,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_28
       rect:
@@ -584,6 +981,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_29
       rect:
@@ -598,6 +1002,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_30
       rect:
@@ -612,6 +1023,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_31
       rect:
@@ -626,6 +1044,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_32
       rect:
@@ -640,6 +1065,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_33
       rect:
@@ -654,6 +1086,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_34
       rect:
@@ -668,6 +1107,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_35
       rect:
@@ -682,6 +1128,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_36
       rect:
@@ -696,6 +1149,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_37
       rect:
@@ -710,6 +1170,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_38
       rect:
@@ -724,6 +1191,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c6305410000000000800000000000000
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_39
       rect:
@@ -738,6 +1212,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e6305410000000000800000000000000
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_40
       rect:
@@ -752,6 +1233,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 07305410000000000800000000000000
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_41
       rect:
@@ -766,6 +1254,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 27305410000000000800000000000000
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_42
       rect:
@@ -780,6 +1275,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 47305410000000000800000000000000
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_43
       rect:
@@ -794,6 +1296,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 67305410000000000800000000000000
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_44
       rect:
@@ -808,6 +1317,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 87305410000000000800000000000000
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_45
       rect:
@@ -822,6 +1338,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a7305410000000000800000000000000
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_46
       rect:
@@ -836,6 +1359,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c7305410000000000800000000000000
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_47
       rect:
@@ -850,6 +1380,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e7305410000000000800000000000000
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_48
       rect:
@@ -864,6 +1401,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 08305410000000000800000000000000
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_49
       rect:
@@ -878,6 +1422,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 28305410000000000800000000000000
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_50
       rect:
@@ -892,6 +1443,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 48305410000000000800000000000000
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_51
       rect:
@@ -906,6 +1464,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 68305410000000000800000000000000
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_52
       rect:
@@ -920,6 +1485,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 88305410000000000800000000000000
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_53
       rect:
@@ -934,6 +1506,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a8305410000000000800000000000000
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_54
       rect:
@@ -948,6 +1527,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c8305410000000000800000000000000
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_55
       rect:
@@ -962,6 +1548,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e8305410000000000800000000000000
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_56
       rect:
@@ -976,6 +1569,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 09305410000000000800000000000000
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_57
       rect:
@@ -990,6 +1590,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4b305410000000000800000000000000
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_58
       rect:
@@ -1004,6 +1611,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 29305410000000000800000000000000
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_59
       rect:
@@ -1018,6 +1632,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6b305410000000000800000000000000
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_60
       rect:
@@ -1032,6 +1653,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 49305410000000000800000000000000
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_62
       rect:
@@ -1046,6 +1674,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8b305410000000000800000000000000
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_63
       rect:
@@ -1060,6 +1695,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ab305410000000000800000000000000
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_64
       rect:
@@ -1074,6 +1716,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 69305410000000000800000000000000
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_68
       rect:
@@ -1088,6 +1737,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e9305410000000000800000000000000
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_69
       rect:
@@ -1102,6 +1758,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cb305410000000000800000000000000
+      internalID: 21300156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_70
       rect:
@@ -1116,6 +1779,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: eb305410000000000800000000000000
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_71
       rect:
@@ -1130,6 +1800,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a305410000000000800000000000000
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_72
       rect:
@@ -1144,6 +1821,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2a305410000000000800000000000000
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_75
       rect:
@@ -1158,6 +1842,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8a305410000000000800000000000000
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_76
       rect:
@@ -1172,6 +1863,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0c305410000000000800000000000000
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_77
       rect:
@@ -1186,6 +1884,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2c305410000000000800000000000000
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_78
       rect:
@@ -1200,6 +1905,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4c305410000000000800000000000000
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_79
       rect:
@@ -1214,6 +1926,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6c305410000000000800000000000000
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_84
       rect:
@@ -1228,6 +1947,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8c305410000000000800000000000000
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_91
       rect:
@@ -1242,6 +1968,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ac305410000000000800000000000000
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_92
       rect:
@@ -1256,6 +1989,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cc305410000000000800000000000000
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_93
       rect:
@@ -1270,6 +2010,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ec305410000000000800000000000000
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_65
       rect:
@@ -1284,6 +2031,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 89305410000000000800000000000000
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_66
       rect:
@@ -1298,6 +2052,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a9305410000000000800000000000000
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_67
       rect:
@@ -1312,6 +2073,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c9305410000000000800000000000000
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: AllGameObject(New)_73
       rect:
@@ -1326,9 +2094,109 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4a305410000000000800000000000000
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AllGameObject(New)_24: 21300048
+      AllGameObject(New)_44: 21300088
+      AllGameObject(New)_34: 21300068
+      AllGameObject(New)_12: 21300024
+      AllGameObject(New)_26: 21300052
+      AllGameObject(New)_18: 21300036
+      AllGameObject(New)_4: 21300008
+      AllGameObject(New)_11: 21300022
+      AllGameObject(New)_41: 21300082
+      AllGameObject(New)_57: 21300148
+      AllGameObject(New)_33: 21300066
+      AllGameObject(New)_37: 21300074
+      AllGameObject(New)_42: 21300084
+      AllGameObject(New)_10: 21300020
+      AllGameObject(New)_75: 21300136
+      AllGameObject(New)_22: 21300044
+      AllGameObject(New)_27: 21300054
+      AllGameObject(New)_59: 21300150
+      AllGameObject(New)_84: 21300168
+      AllGameObject(New)_92: 21300172
+      AllGameObject(New)_65: 21300120
+      AllGameObject(New)_28: 21300056
+      AllGameObject(New)_40: 21300080
+      AllGameObject(New)_51: 21300102
+      AllGameObject(New)_7: 21300014
+      AllGameObject(New)_5: 21300010
+      AllGameObject(New)_9: 21300018
+      AllGameObject(New)_58: 21300114
+      AllGameObject(New)_63: 21300154
+      AllGameObject(New)_1: 21300002
+      AllGameObject(New)_67: 21300124
+      AllGameObject(New)_70: 21300158
+      AllGameObject(New)_16: 21300032
+      AllGameObject(New)_25: 21300050
+      AllGameObject(New)_62: 21300152
+      AllGameObject(New)_38: 21300076
+      AllGameObject(New)_29: 21300058
+      AllGameObject(New)_13: 21300026
+      AllGameObject(New)_48: 21300096
+      AllGameObject(New)_36: 21300072
+      AllGameObject(New)_93: 21300174
+      AllGameObject(New)_56: 21300112
+      AllGameObject(New)_73: 21300132
+      AllGameObject(New)_43: 21300086
+      AllGameObject(New)_8: 21300016
+      AllGameObject(New)_52: 21300104
+      AllGameObject(New)_69: 21300156
+      AllGameObject(New)_32: 21300064
+      AllGameObject(New)_50: 21300100
+      AllGameObject(New)_60: 21300116
+      AllGameObject(New)_20: 21300040
+      AllGameObject(New)_35: 21300070
+      AllGameObject(New)_77: 21300162
+      AllGameObject(New)_76: 21300160
+      AllGameObject(New)_54: 21300108
+      AllGameObject(New)_19: 21300038
+      AllGameObject(New)_0: 21300000
+      AllGameObject(New)_68: 21300126
+      AllGameObject(New)_71: 21300128
+      AllGameObject(New)_6: 21300012
+      AllGameObject(New)_39: 21300078
+      AllGameObject(New)_78: 21300164
+      AllGameObject(New)_79: 21300166
+      AllGameObject(New)_3: 21300006
+      AllGameObject(New)_72: 21300130
+      AllGameObject(New)_14: 21300028
+      AllGameObject(New)_31: 21300062
+      AllGameObject(New)_49: 21300098
+      AllGameObject(New)_45: 21300090
+      AllGameObject(New)_46: 21300092
+      AllGameObject(New)_21: 21300042
+      AllGameObject(New)_15: 21300030
+      AllGameObject(New)_23: 21300046
+      AllGameObject(New)_17: 21300034
+      AllGameObject(New)_30: 21300060
+      AllGameObject(New)_53: 21300106
+      AllGameObject(New)_55: 21300110
+      AllGameObject(New)_64: 21300118
+      AllGameObject(New)_66: 21300122
+      AllGameObject(New)_91: 21300170
+      AllGameObject(New)_47: 21300094
+      AllGameObject(New)_2: 21300004
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
